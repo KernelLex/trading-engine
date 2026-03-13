@@ -152,7 +152,7 @@ class DataPipeline:
     def _ingest_stocks(self) -> int:
         try:
             logger.info("[1/4] Collecting stock prices …")
-            records = self.stock_collector.collect_all(period="1mo")
+            records = self.stock_collector.collect_all(period="1y")
             return self.db.insert_stock_prices(records)
         except Exception as exc:
             logger.error("Stock ingestion failed: %s", exc)

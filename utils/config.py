@@ -270,7 +270,7 @@ BACKTEST_SLIPPAGE_PCT: float = float(
     os.getenv("BACKTEST_SLIPPAGE_PCT", "0.0002")
 )
 BACKTEST_MIN_TRADES: int = int(
-    os.getenv("BACKTEST_MIN_TRADES", "10")
+    os.getenv("BACKTEST_MIN_TRADES", "5")
 )
 BACKTEST_BENCHMARK_TICKER: str = os.getenv(
     "BACKTEST_BENCHMARK_TICKER", "^GSPC"
