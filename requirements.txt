@@ -1,0 +1,21 @@
+yfinance>=0.2.31
+requests>=2.31.0
+praw>=7.7.1
+duckdb>=0.9.2
+python-dotenv>=1.0.0
+schedule>=1.2.1
+fredapi>=0.5.1
+
+# Phase 2 — Financial NLP Intelligence
+transformers>=4.36.0
+torch>=2.1.0
+numpy>=1.24.0
+
+# Phase 3 — AI Research Agent
+openai>=1.12.0
+
+# Phase 4 — Strategy Discovery Engine
+# (no new dependencies — reuses openai and duckdb from above)
+
+# Phase 5 — Automated Backtesting Engine
+pandas>=2.0.0
